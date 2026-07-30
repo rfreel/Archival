@@ -1,0 +1,24 @@
+{
+  "producer_repository": "rfreel/T0",
+  "candidate_commit": "d8f03d0c101c004456fa6c6b9387e53e9d5e77f5",
+  "contract_id": "rfreel.T0.normalize_identifier",
+  "claimed_contract_version": "1.0.0",
+  "status": "revoked",
+  "reason": "Candidate removed required rejection of Unicode control and format code points.",
+  "evidence": {
+    "consumer_pull_request": "rfreel/Archival#3",
+    "workflow_run_id": 30514811039,
+    "producer_issue": "rfreel/T0#45",
+    "hash_gate": "PASS",
+    "semantic_gate": "FAIL",
+    "failed_tests": [
+      "test_all_contract_examples_and_rejections",
+      "test_invisible_format_character_is_rejected"
+    ]
+  },
+  "effect": {
+    "stable_commit_retained": "9a855b13ba4d0340265d57a5fc6d1b132e792c07",
+    "candidate_blocked_before_future_fetch": true,
+    "upgrade_pull_request_merged": false
+  }
+}
