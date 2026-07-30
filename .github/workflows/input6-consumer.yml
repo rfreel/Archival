@@ -1,0 +1,37 @@
+name: INPUT6 consumer contract
+
+on:
+  pull_request:
+    paths:
+      - "experiments/input6-consumer/**"
+      - ".github/workflows/input6-consumer.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "experiments/input6-consumer/**"
+      - ".github/workflows/input6-consumer.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-consumer:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: experiments/input6-consumer
+    steps:
+      - name: Check out consumer
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Materialize pinned producer dependency
+        run: python fetch_dependency.py
+      - name: Run consumer contract tests
+        run: python -m unittest discover -s tests -v
+      - name: Observe novel downstream consequence
+        run: python observe_consequence.py

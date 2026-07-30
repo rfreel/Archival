@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "producer_commit": "9a855b13ba4d0340265d57a5fc6d1b132e792c07",
+  "contract_version": "1.0.0",
+  "tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "result": "6 tests passed",
+    "duration_seconds": 0.002
+  },
+  "consequence": {
+    "command": "python observe_consequence.py",
+    "input_count": 5,
+    "unique_output_count": 3,
+    "outputs": ["kelvin", "strasse", "inv1"],
+    "status": "PASS"
+  },
+  "rollback": "Restore dependency.lock.json to the last passing immutable producer commit."
+}
