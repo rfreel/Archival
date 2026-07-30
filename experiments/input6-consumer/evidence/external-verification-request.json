@@ -1,0 +1,19 @@
+{
+  "producer_repository": "rfreel/T0",
+  "producer_commit": "9a855b13ba4d0340265d57a5fc6d1b132e792c07",
+  "consumer_repository": "rfreel/Archival",
+  "consumer_commit": "9fcb6ba8dfad48b5b471d7148f5deaf2b7e48ead",
+  "contract_version": "1.0.0",
+  "required_checks": [
+    "immutable dependency fetch",
+    "SHA-256 content verification",
+    "consumer contract tests",
+    "novel downstream consequence metric"
+  ],
+  "expected_metric": {
+    "metric": "novel_external_keys_canonicalized",
+    "input_count": 5,
+    "unique_output_count": 3,
+    "status": "PASS"
+  }
+}

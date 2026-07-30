@@ -7,11 +7,11 @@
   "files": {
     "module": {
       "path": "experiments/input5-beta/src/identifiers/normalize.py",
-      "sha256": "93924608bf67290803fa4f847c6c249acaac7151e40b5ddffbd9da791e0ebffb"
+      "sha256": "3f7448edd5d87b6988af892b20c7462be0e2c0c5c98a4c7e0d00857e1ae4bca9"
     },
     "contract": {
       "path": "experiments/input5-beta/contract-v1.0.0.json",
-      "sha256": "698d6fa77ac0423884ed3550fae8f94621ab00644ead7b81d1dcf88ec5233056"
+      "sha256": "50330fe221137c9c2445f9ae1b08f7d3924fb65f4bba3dcf086b4a9f2becc083"
     }
   },
   "revoked_commits": [],
