@@ -5,6 +5,12 @@ on:
     paths:
       - "experiments/input6-consumer/**"
       - ".github/workflows/input6-consumer.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "experiments/input6-consumer/**"
+      - ".github/workflows/input6-consumer.yml"
   workflow_dispatch:
 
 permissions:
