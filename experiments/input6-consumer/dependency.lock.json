@@ -3,11 +3,11 @@
   "contract_version": "1.0.0",
   "status": "active",
   "producer_repository": "rfreel/T0",
-  "producer_commit": "9a855b13ba4d0340265d57a5fc6d1b132e792c07",
+  "producer_commit": "d8f03d0c101c004456fa6c6b9387e53e9d5e77f5",
   "files": {
     "module": {
       "path": "experiments/input5-beta/src/identifiers/normalize.py",
-      "sha256": "3f7448edd5d87b6988af892b20c7462be0e2c0c5c98a4c7e0d00857e1ae4bca9"
+      "sha256": "1b6a58a3dad174f99aea81ec0ab59126cc26a801da8b1a4450dbc2ad77646b6e"
     },
     "contract": {
       "path": "experiments/input5-beta/contract-v1.0.0.json",
