@@ -14,7 +14,9 @@
       "sha256": "50330fe221137c9c2445f9ae1b08f7d3924fb65f4bba3dcf086b4a9f2becc083"
     }
   },
-  "revoked_commits": [],
+  "revoked_commits": [
+    "d8f03d0c101c004456fa6c6b9387e53e9d5e77f5"
+  ],
   "upgrade_policy": {
     "require_hash_match": true,
     "require_contract_tests": true,
