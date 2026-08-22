@@ -7,6 +7,8 @@ on:
     paths:
       - experiments/perfect_cuboid_motive/finite_field_motive.cpp
       - experiments/perfect_cuboid_motive/run.py
+      - experiments/perfect_cuboid_motive/ramified_counts.cpp
+      - experiments/perfect_cuboid_motive/cross_axis.py
       - .github/workflows/perfect-cuboid-motive-sim.yml
   workflow_dispatch:
 
@@ -25,7 +27,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Run exact simulation
+      - name: Run exact extension and cross-axis simulations
         id: sim
         shell: bash
         run: |
@@ -33,6 +35,10 @@ jobs:
           set +e
           python3 experiments/perfect_cuboid_motive/run.py > experiments/perfect_cuboid_motive/results/workflow.log 2>&1
           status=$?
+          if [ "$status" -eq 0 ]; then
+            python3 experiments/perfect_cuboid_motive/cross_axis.py >> experiments/perfect_cuboid_motive/results/workflow.log 2>&1
+            status=$?
+          fi
           echo "$status" > experiments/perfect_cuboid_motive/results/workflow_exit_code.txt
           echo "status=$status" >> "$GITHUB_OUTPUT"
           set -e
@@ -45,7 +51,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add experiments/perfect_cuboid_motive/results
           if ! git diff --cached --quiet; then
-            git commit -m "experiment: record motive simulation results"
+            git commit -m "experiment: record cross-axis simulation results"
             git push origin HEAD:agent/perfect-cuboid-motive-sim-20260821
           fi
 
