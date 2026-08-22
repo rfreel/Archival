@@ -1,0 +1,62 @@
+name: Perfect Cuboid Motive Simulation
+
+on:
+  push:
+    branches:
+      - agent/perfect-cuboid-motive-sim-20260821
+    paths:
+      - experiments/perfect_cuboid_motive/finite_field_motive.cpp
+      - experiments/perfect_cuboid_motive/run.py
+      - .github/workflows/perfect-cuboid-motive-sim.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/perfect-cuboid-motive-sim-20260821
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run exact simulation
+        id: sim
+        shell: bash
+        run: |
+          mkdir -p experiments/perfect_cuboid_motive/results
+          set +e
+          python3 experiments/perfect_cuboid_motive/run.py > experiments/perfect_cuboid_motive/results/workflow.log 2>&1
+          status=$?
+          echo "$status" > experiments/perfect_cuboid_motive/results/workflow_exit_code.txt
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          set -e
+
+      - name: Commit result receipts
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add experiments/perfect_cuboid_motive/results
+          if ! git diff --cached --quiet; then
+            git commit -m "experiment: record motive simulation results"
+            git push origin HEAD:agent/perfect-cuboid-motive-sim-20260821
+          fi
+
+      - name: Upload result package
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: perfect-cuboid-motive-simulation
+          path: experiments/perfect_cuboid_motive/results/
+          if-no-files-found: error
+
+      - name: Preserve simulator status
+        if: always()
+        run: exit "${{ steps.sim.outputs.status }}"
