@@ -1,0 +1,12 @@
+id,left,right,status
+D74,Prime-field point-count identity,Identity over F_(p^n),extension-tested
+D75,Elliptic trace t,Symmetric-square trace t^2-q,structural split
+D76,Formula by p mod 8,"Formula by chi(-1), chi(2)",finite-field invariant
+D77,CM trace vanishes over F_p,Trace activates over an extension,observed
+D78,Numerical fit across primes,Frobenius-recurrence-compatible fingerprint,stronger
+D79,Tate/boundary terms,Transcendental CM terms,separated
+D80,j=1728 contribution,j=8000 contribution,independent
+D81,Affine character sum,Compactified trace plus boundary correction,different objects
+D82,Vary p,Vary extension degree n at fixed p,new axis
+D83,Count equality,All 16 character-sum equalities,stronger
+D84,Extension-field identity,Explicit correspondence/motivic proof,still open

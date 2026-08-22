@@ -1,0 +1,92 @@
+{
+  "success": true,
+  "status": "extension-field computational fingerprint; not a written motivic proof",
+  "tested_fields": 32,
+  "max_q": 2401,
+  "all_16_sums_ok": true,
+  "euler_ok": true,
+  "full_ok": true,
+  "trace_recurrences_ok": true,
+  "motive_fingerprints_ok": true,
+  "sym2_local_polynomial": "1-(t^2-q)T+(q*t^2-q^2)T^2-q^3T^3",
+  "extension_activations": [
+    {
+      "p": 3,
+      "curve": "t4",
+      "first_active_degree": 2,
+      "trace": -6
+    },
+    {
+      "p": 5,
+      "curve": "t8",
+      "first_active_degree": 2,
+      "trace": -10
+    },
+    {
+      "p": 7,
+      "curve": "t4",
+      "first_active_degree": 2,
+      "trace": -14
+    },
+    {
+      "p": 7,
+      "curve": "t8",
+      "first_active_degree": 2,
+      "trace": -14
+    },
+    {
+      "p": 11,
+      "curve": "t4",
+      "first_active_degree": 2,
+      "trace": -22
+    },
+    {
+      "p": 13,
+      "curve": "t8",
+      "first_active_degree": 2,
+      "trace": -26
+    },
+    {
+      "p": 19,
+      "curve": "t4",
+      "first_active_degree": 2,
+      "trace": -38
+    },
+    {
+      "p": 23,
+      "curve": "t4",
+      "first_active_degree": 2,
+      "trace": -46
+    },
+    {
+      "p": 23,
+      "curve": "t8",
+      "first_active_degree": 2,
+      "trace": -46
+    },
+    {
+      "p": 29,
+      "curve": "t8",
+      "first_active_degree": 2,
+      "trace": -58
+    },
+    {
+      "p": 31,
+      "curve": "t4",
+      "first_active_degree": 2,
+      "trace": -62
+    },
+    {
+      "p": 31,
+      "curve": "t8",
+      "first_active_degree": 2,
+      "trace": -62
+    },
+    {
+      "p": 37,
+      "curve": "t8",
+      "first_active_degree": 2,
+      "trace": -74
+    }
+  ]
+}

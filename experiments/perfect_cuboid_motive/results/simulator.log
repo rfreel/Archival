@@ -1,0 +1,49 @@
+$ g++ -O3 -std=c++17 -Wall -Wextra /home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/finite_field_motive.cpp -o /home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/results/finite_field_motive
+/home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/finite_field_motive.cpp: In function ‘int main(int, char**)’:
+/home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/finite_field_motive.cpp:222:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  222 |     for(int i=0;i<16;++i)out<<",S"<<i; for(int i=0;i<16;++i)out<<",P"<<i;
+      |     ^~~
+/home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/finite_field_motive.cpp:222:40: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  222 |     for(int i=0;i<16;++i)out<<",S"<<i; for(int i=0;i<16;++i)out<<",P"<<i;
+      |                                        ^~~
+/home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/finite_field_motive.cpp:228:9: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  228 |         for(auto x:r.sums)out<<','<<x; for(auto x:r.predicted)out<<','<<x;
+      |         ^~~
+/home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/finite_field_motive.cpp:228:40: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  228 |         for(auto x:r.sums)out<<','<<x; for(auto x:r.predicted)out<<','<<x;
+      |                                        ^~~
+
+$ /home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/results/finite_field_motive /home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/results/extension_field_character_sums.csv
+p=3 n=1 q=3 sums=1 E=1 F=1
+p=3 n=2 q=9 sums=1 E=1 F=1
+p=3 n=3 q=27 sums=1 E=1 F=1
+p=3 n=4 q=81 sums=1 E=1 F=1
+p=3 n=5 q=243 sums=1 E=1 F=1
+p=3 n=6 q=729 sums=1 E=1 F=1
+p=5 n=1 q=5 sums=1 E=1 F=1
+p=5 n=2 q=25 sums=1 E=1 F=1
+p=5 n=3 q=125 sums=1 E=1 F=1
+p=5 n=4 q=625 sums=1 E=1 F=1
+p=7 n=1 q=7 sums=1 E=1 F=1
+p=7 n=2 q=49 sums=1 E=1 F=1
+p=7 n=3 q=343 sums=1 E=1 F=1
+p=7 n=4 q=2401 sums=1 E=1 F=1
+p=11 n=1 q=11 sums=1 E=1 F=1
+p=11 n=2 q=121 sums=1 E=1 F=1
+p=11 n=3 q=1331 sums=1 E=1 F=1
+p=13 n=1 q=13 sums=1 E=1 F=1
+p=13 n=2 q=169 sums=1 E=1 F=1
+p=13 n=3 q=2197 sums=1 E=1 F=1
+p=17 n=1 q=17 sums=1 E=1 F=1
+p=17 n=2 q=289 sums=1 E=1 F=1
+p=19 n=1 q=19 sums=1 E=1 F=1
+p=19 n=2 q=361 sums=1 E=1 F=1
+p=23 n=1 q=23 sums=1 E=1 F=1
+p=23 n=2 q=529 sums=1 E=1 F=1
+p=29 n=1 q=29 sums=1 E=1 F=1
+p=29 n=2 q=841 sums=1 E=1 F=1
+p=31 n=1 q=31 sums=1 E=1 F=1
+p=31 n=2 q=961 sums=1 E=1 F=1
+p=37 n=1 q=37 sums=1 E=1 F=1
+p=37 n=2 q=1369 sums=1 E=1 F=1
+elapsed_seconds=0.540402
