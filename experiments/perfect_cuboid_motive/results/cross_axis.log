@@ -1,0 +1,44 @@
+$ g++ -O3 -std=c++17 -Wall -Wextra /home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/ramified_counts.cpp -o /home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/results/ramified_counts
+/home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/ramified_counts.cpp: In function ‘int main(int, char**)’:
+/home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/ramified_counts.cpp:44:21: warning: loop variable ‘<structured bindings>’ creates a copy from type ‘const std::pair<int, int>’ [-Wrange-loop-construct]
+   44 |     for (const auto [p, m] : cases) {
+      |                     ^~~~~~
+/home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/ramified_counts.cpp:44:21: note: use reference type to prevent copying
+   44 |     for (const auto [p, m] : cases) {
+      |                     ^~~~~~
+      |                     &
+
+$ /home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/results/ramified_counts /home/runner/work/Archival/Archival/experiments/perfect_cuboid_motive/results/ramified_local_ring_counts.csv
+RING p=3 m=1 q=3 E=1 F=1 R=0
+RING p=3 m=2 q=9 E=9 F=9 R=0
+RING p=3 m=3 q=27 E=45 F=45 R=0
+RING p=3 m=4 q=81 E=405 F=405 R=0
+RING p=3 m=5 q=243 E=3321 F=3321 R=0
+RING p=3 m=6 q=729 E=29889 F=29889 R=0
+RING p=5 m=1 q=5 E=5 F=5 R=0
+RING p=5 m=2 q=25 E=45 F=45 R=0
+RING p=5 m=3 q=125 E=725 F=645 R=80
+RING p=5 m=4 q=625 E=12125 F=8525 R=3600
+RING p=7 m=1 q=7 E=9 F=5 R=4
+RING p=7 m=2 q=49 E=441 F=245 R=196
+RING p=7 m=3 q=343 E=20433 F=10829 R=9604
+RING p=7 m=4 q=2401 E=1001217 F=530621 R=470596
+RING p=11 m=1 q=11 E=9 F=9 R=0
+RING p=11 m=2 q=121 E=1089 F=1089 R=0
+RING p=11 m=3 q=1331 E=124509 F=124509 R=0
+RING p=13 m=1 q=13 E=21 F=21 R=0
+RING p=13 m=2 q=169 E=2925 F=1677 R=1248
+RING p=13 m=3 q=2197 E=478101 F=257205 R=220896
+RING p=17 m=1 q=17 E=57 F=41 R=16
+RING p=17 m=2 q=289 E=11929 F=4041 R=7888
+RING p=19 m=1 q=19 E=41 F=17 R=24
+RING p=19 m=2 q=361 E=14801 F=6137 R=8664
+RING p=23 m=1 q=23 E=73 F=37 R=36
+RING p=23 m=2 q=529 E=38617 F=19573 R=19044
+RING p=29 m=1 q=29 E=125 F=101 R=24
+RING p=29 m=2 q=841 E=62901 F=23229 R=39672
+RING p=31 m=1 q=31 E=129 F=65 R=64
+RING p=31 m=2 q=961 E=123969 F=62465 R=61504
+RING p=37 m=1 q=37 E=189 F=117 R=72
+RING p=37 m=2 q=1369 E=189477 F=48285 R=141192
+elapsed_seconds=0.042808

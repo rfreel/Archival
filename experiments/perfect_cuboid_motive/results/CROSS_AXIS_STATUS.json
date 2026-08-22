@@ -1,0 +1,97 @@
+{
+  "success": true,
+  "matched_cases": 32,
+  "depth_one_counts_match": true,
+  "different_counts_beyond_depth_one": 21,
+  "different_redundancy_beyond_depth_one": 7,
+  "first_failure_axes": [
+    {
+      "p": 3,
+      "first_unramified_failure_degree": 3,
+      "first_ramified_failure_depth": "none",
+      "prime_field_redundant": 1,
+      "ramified_redundant_all_tested": 1,
+      "unramified_redundant_all_tested": 0
+    },
+    {
+      "p": 5,
+      "first_unramified_failure_degree": 2,
+      "first_ramified_failure_depth": 3,
+      "prime_field_redundant": 1,
+      "ramified_redundant_all_tested": 0,
+      "unramified_redundant_all_tested": 0
+    },
+    {
+      "p": 7,
+      "first_unramified_failure_degree": 1,
+      "first_ramified_failure_depth": 1,
+      "prime_field_redundant": 0,
+      "ramified_redundant_all_tested": 0,
+      "unramified_redundant_all_tested": 0
+    },
+    {
+      "p": 11,
+      "first_unramified_failure_degree": 2,
+      "first_ramified_failure_depth": "none",
+      "prime_field_redundant": 1,
+      "ramified_redundant_all_tested": 1,
+      "unramified_redundant_all_tested": 0
+    },
+    {
+      "p": 13,
+      "first_unramified_failure_degree": 2,
+      "first_ramified_failure_depth": 2,
+      "prime_field_redundant": 1,
+      "ramified_redundant_all_tested": 0,
+      "unramified_redundant_all_tested": 0
+    },
+    {
+      "p": 17,
+      "first_unramified_failure_degree": 1,
+      "first_ramified_failure_depth": 1,
+      "prime_field_redundant": 0,
+      "ramified_redundant_all_tested": 0,
+      "unramified_redundant_all_tested": 0
+    },
+    {
+      "p": 19,
+      "first_unramified_failure_degree": 1,
+      "first_ramified_failure_depth": 1,
+      "prime_field_redundant": 0,
+      "ramified_redundant_all_tested": 0,
+      "unramified_redundant_all_tested": 0
+    },
+    {
+      "p": 23,
+      "first_unramified_failure_degree": 1,
+      "first_ramified_failure_depth": 1,
+      "prime_field_redundant": 0,
+      "ramified_redundant_all_tested": 0,
+      "unramified_redundant_all_tested": 0
+    },
+    {
+      "p": 29,
+      "first_unramified_failure_degree": 1,
+      "first_ramified_failure_depth": 1,
+      "prime_field_redundant": 0,
+      "ramified_redundant_all_tested": 0,
+      "unramified_redundant_all_tested": 0
+    },
+    {
+      "p": 31,
+      "first_unramified_failure_degree": 1,
+      "first_ramified_failure_depth": 1,
+      "prime_field_redundant": 0,
+      "ramified_redundant_all_tested": 0,
+      "unramified_redundant_all_tested": 0
+    },
+    {
+      "p": 37,
+      "first_unramified_failure_degree": 1,
+      "first_ramified_failure_depth": 1,
+      "prime_field_redundant": 0,
+      "ramified_redundant_all_tested": 0,
+      "unramified_redundant_all_tested": 0
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+p,first_unramified_failure_degree,first_ramified_failure_depth,prime_field_redundant,ramified_redundant_all_tested,unramified_redundant_all_tested
+3,3,none,1,1,0
+5,2,3,1,0,0
+7,1,1,0,0,0
+11,2,none,1,1,0
+13,2,2,1,0,0
+17,1,1,0,0,0
+19,1,1,0,0,0
+23,1,1,0,0,0
+29,1,1,0,0,0
+31,1,1,0,0,0
+37,1,1,0,0,0

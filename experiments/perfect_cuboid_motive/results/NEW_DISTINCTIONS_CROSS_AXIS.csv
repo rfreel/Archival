@@ -1,0 +1,13 @@
+id,left,right,status
+D85,Ramified jet depth m,Unramified residue extension degree n,orthogonal axes
+D86,Z/p^mZ with p^m elements,F_(p^m) with p^m elements,"same cardinality, different geometry"
+D87,Nilpotent thickening,Reduced finite-field extension,different local information
+D88,Hensel/Greenberg branching,Frobenius trace recurrence,different transition laws
+D89,Redundant on F_p-points,Redundant on all geometric points over Fbar_p,not equivalent
+D90,Redundant over Q_p,Redundant over finite residue extensions,not equivalent
+D91,Trace zero at degree one,Motive absent,false implication
+D92,Singular q3=0 jet failure,CM motive activation over F_(p^2),different mechanisms
+D93,Failure first visible at p^m,Failure first visible at F_(p^n),separate depths
+D94,Arithmetic local point over Q_p,Geometric point over algebraic residue closure,different loci
+D95,Local-ring density,Finite-field point-count density,"same leading scale, different corrections"
+D96,Prime-field coincidence,Axis-stable identity,requires both ramified and unramified tests

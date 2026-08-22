@@ -46,4 +46,4 @@ p=31 n=1 q=31 sums=1 E=1 F=1
 p=31 n=2 q=961 sums=1 E=1 F=1
 p=37 n=1 q=37 sums=1 E=1 F=1
 p=37 n=2 q=1369 sums=1 E=1 F=1
-elapsed_seconds=0.540402
+elapsed_seconds=0.540418
