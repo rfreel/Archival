@@ -1,0 +1,13 @@
+.flywheel/flywheel.db
+.flywheel/tasks/tasks.jsonl
+.flywheel/memory/playbook.jsonl
+.flywheel/receipts/
+.flywheel/reviews/
+.flywheel/sessions/
+.flywheel/plan/revisions/
+.beads/
+.bv/
+__pycache__/
+*.py[cod]
+.coverage
+.pytest_cache/
